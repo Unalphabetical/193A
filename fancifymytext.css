@@ -1,0 +1,17 @@
+/* Basic styling */
+body {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+}
+fieldset {
+	border: 2px solid #ccc;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+textarea {
+	width: 100%;
+	resize: none;
+}
+button {
+	margin-top: 10px;
+}

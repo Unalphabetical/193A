@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href ="fancifymytext.css">
+	<script src="FancifyMyText.js"></script>
+    <title>Fancify Shamcify</title>
+</head>
+<body>
+    <h1>Fancify my Text</h1>
+
+    <!-- Text Input Section -->
+    <fieldset>
+        <legend>Text</legend>
+        <textarea id="inputText" rows="4" cols="30"></textarea>
+    </fieldset>
+
+    <!-- Fancify Controls Section -->
+    <fieldset>
+        <legend>Fancify</legend>
+        <button id="biggerButton" onClick="biggerText()">Bigger!</button><br>
+
+        <button id="normalButton" onClick="normalText()">Normal!</button><br><br>
+        
+        <input type="radio" id="fancyShmancy" name="styleOption" value="fancy" onClick="fancify()">FancyShmancy
+
+        <input type="radio" id="boringBetty" name="styleOption" value="boring" onClick="boring()">BoringBetty<br><br>
+		<button id="normalButton" onClick="moo()">Moo!</button><br><br>
+	</fieldset>
+
+</body>
+</html>
