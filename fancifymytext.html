@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href ="fancifymytext.css">
-	<script src="FancifyMyText.js"></script>
+    <link rel="stylesheet" href="fancifymytext.css">
+    <script src="FancifyMyText.js"></script>
     <title>Fancify Shamcify</title>
-</head>
+    <style>
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+    </style>
 <body>
-    <h1>Fancify my Text</h1>
+<!-- Navigation Bar -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="encrypt-it.html">Encrypt it</a>
+</nav>
 
-    <!-- Text Input Section -->
-    <fieldset>
-        <legend>Text</legend>
-        <textarea id="inputText" rows="4" cols="30"></textarea>
-    </fieldset>
+<h1>Fancify my Text</h1>
 
-    <!-- Fancify Controls Section -->
-    <fieldset>
-        <legend>Fancify</legend>
-        <button id="biggerButton" onClick="biggerText()">Bigger!</button><br>
+<!-- Text Input Section -->
+<fieldset id="text-section">
+    <legend>Text</legend>
+    <textarea id="inputText" rows="4" cols="30"></textarea>
+</fieldset>
 
-        <button id="normalButton" onClick="normalText()">Normal!</button><br><br>
-        
-        <input type="radio" id="fancyShmancy" name="styleOption" value="fancy" onClick="fancify()">FancyShmancy
+<!-- Fancify Controls Section -->
+<fieldset id="controls-section">
+    <legend>Fancify</legend>
+    <button id="biggerButton" onClick="biggerText()">Bigger!</button><br>
 
-        <input type="radio" id="boringBetty" name="styleOption" value="boring" onClick="boring()">BoringBetty<br><br>
-		<button id="normalButton" onClick="moo()">Moo!</button><br><br>
-	</fieldset>
+    <button id="normalButton" onClick="normalText()">Normal!</button><br><br>
 
+    <input type="radio" id="fancyShmancy" name="styleOption" value="fancy" onClick="fancify()">FancyShmancy
+
+    <input type="radio" id="boringBetty" name="styleOption" value="boring" onClick="boring()">BoringBetty<br><br>
+    <button id="mooButton" onClick="moo()">Moo!</button><br><br>
+</fieldset>
 </body>
 </html>
